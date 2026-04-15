@@ -24,4 +24,13 @@ CREATE TABLE recompenses (
     obtenue BOOLEAN DEFAULT 1,
     date_obtenue TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE users_tab(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(50),
+    prenom VARCHAR(50),
+    email VARCHAR(100),
+    pw VARCHAR(20),
+    user_status ENUM('parent','enfant') 
+)
 ⚙️ 2. config.php
